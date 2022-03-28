@@ -1,0 +1,49 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  lane :beta do 
+    run_homework("Module1")
+  end
+
+  lane :diagram do 
+    run_tests(devices: ["iPhone 11"],
+              scheme: "Module1")
+    xcov(project: "Module1.xcodeproj",
+         output_directory: "fastlane/xcov_output")  
+  end
+
+  desc "Generate new localized screenshots"
+  lane :screenshots do
+    capture_screenshots(scheme: "Module1")
+  end
+end
+
+def run_homework(scheme)
+  send_message("Start process", "Started building #{scheme} #{git_branch} #{get_version_number}")
+  build_app(scheme: "#{scheme}", skip_archive: true, skip_codesigning: true)
+  run_tests(devices: ["iPhone 11"],
+            scheme: "#{scheme}")
+  send_message("Finish process", "Built #{scheme} #{git_branch} #{get_version_number}")
+end
+
+def send_message(activity_title, text)
+       teams_bot(teams_url: "https://epam.webhook.office.com/webhookb2/e9c3a883-097f-4704-b4f3-cf04f1ea2653@b41b72d0-4e9f-4c26-8a69-f949f367c91d/IncomingWebhook/361b44ccc2a141759aa3a630ee7c83cd/0b06ed46-2d02-412a-a59a-203cee3d0c0a",
+    title: "Build information",
+    activity_title: "#{activity_title}",
+    text: "#{text}")
+end

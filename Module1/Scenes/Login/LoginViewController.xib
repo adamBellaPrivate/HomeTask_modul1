@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Module1" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTextField" destination="RX9-fc-RVH" id="4wS-qr-rwk"/>
+                <outlet property="usernameTextField" destination="M8T-l1-CsK" id="b6R-Qa-cTR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="NfQ-q0-seR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random.org" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZt-3U-wsH">
+                    <rect key="frame" x="20" y="64" width="374" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8T-l1-CsK">
+                    <rect key="frame" x="16" y="150" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Yfk-77-IVB"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RX9-fc-RVH">
+                    <rect key="frame" x="16" y="214" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="join" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Soy-Kp-xMO"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uZt-3U-wsH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="5WT-WJ-I2M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uZt-3U-wsH" secondAttribute="trailing" constant="20" id="TR9-Or-kpW"/>
+                <constraint firstItem="M8T-l1-CsK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="crB-TG-oo8"/>
+                <constraint firstItem="RX9-fc-RVH" firstAttribute="trailing" secondItem="M8T-l1-CsK" secondAttribute="trailing" id="eMC-2U-cEb"/>
+                <constraint firstItem="M8T-l1-CsK" firstAttribute="top" secondItem="uZt-3U-wsH" secondAttribute="bottom" constant="50" id="gBi-np-VKF"/>
+                <constraint firstItem="uZt-3U-wsH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="iJ2-dB-59a"/>
+                <constraint firstItem="RX9-fc-RVH" firstAttribute="top" secondItem="M8T-l1-CsK" secondAttribute="bottom" constant="30" id="nu8-Dz-PHe"/>
+                <constraint firstItem="RX9-fc-RVH" firstAttribute="leading" secondItem="M8T-l1-CsK" secondAttribute="leading" id="sGB-5B-cqj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="M8T-l1-CsK" secondAttribute="trailing" constant="16" id="wd9-jK-PpM"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

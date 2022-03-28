@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='Module1Tests.xctest' tests='17' failures='0'>
+  <testsuite name='Module1Tests.ApplicationCoordinators' tests='1' failures='0'>
+    <testcase classname='Module1Tests.ApplicationCoordinators' name='testNavigation' time='0.005'/>
+  </testsuite>
+  <testsuite name='Module1Tests.DataListRequestTests' tests='1' failures='0'>
+    <testcase classname='Module1Tests.DataListRequestTests' name='testDataListRequestSetGetSuccess' time='0.004'/>
+  </testsuite>
+  <testsuite name='Module1Tests.DataListViewModelTests' tests='3' failures='0'>
+    <testcase classname='Module1Tests.DataListViewModelTests' name='testFailure' time='0.011'/>
+    <testcase classname='Module1Tests.DataListViewModelTests' name='testSuccessEmptyResults' time='0.002'/>
+    <testcase classname='Module1Tests.DataListViewModelTests' name='testSuccessMoreResults' time='0.006'/>
+  </testsuite>
+  <testsuite name='Module1Tests.LoginDataTests' tests='7' failures='0'>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataInitWitEmptyhPassword' time='0.001'/>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataInitWithEmptyData' time='0.002'/>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataInitWithEmptyUsername' time='0.001'/>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataInitWithoutData' time='0.001'/>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataInitWithPassword' time='0.002'/>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataInitWithUsername' time='0.001'/>
+    <testcase classname='Module1Tests.LoginDataTests' name='testLoginDataSetGetSuccess' time='0.002'/>
+  </testsuite>
+  <testsuite name='Module1Tests.LoginViewModelTests' tests='4' failures='0'>
+    <testcase classname='Module1Tests.LoginViewModelTests' name='testLoginWithIncorrectData' time='0.001'/>
+    <testcase classname='Module1Tests.LoginViewModelTests' name='testLoginWithIncorrectPassword' time='0.001'/>
+    <testcase classname='Module1Tests.LoginViewModelTests' name='testLoginWithIncorrectUsername' time='0.001'/>
+    <testcase classname='Module1Tests.LoginViewModelTests' name='testSuccessLogin' time='0.001'/>
+  </testsuite>
+  <testsuite name='Module1Tests.NetworkProviderTests' tests='1' failures='0'>
+    <testcase classname='Module1Tests.NetworkProviderTests' name='testURLBuilder' time='0.002'/>
+  </testsuite>
+</testsuites>
