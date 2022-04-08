@@ -28,6 +28,10 @@
 		C76F0FC827CC25360031CA2D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F0FC727CC25360031CA2D /* LoginViewModelTests.swift */; };
 		C76F0FCA27CC26FF0031CA2D /* DataListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F0FC927CC26FF0031CA2D /* DataListViewModelTests.swift */; };
 		C76F0FCD27CC2E480031CA2D /* ApplicationCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F0FCC27CC2E480031CA2D /* ApplicationCoordinators.swift */; };
+		C7FAACD12800C33F00ACE139 /* LeapYearCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAACD02800C33F00ACE139 /* LeapYearCalculatorTests.swift */; };
+		C7FAACD32800C6E600ACE139 /* LeapYearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAACD22800C6E600ACE139 /* LeapYearCalculator.swift */; };
+		C7FAACD52800C70200ACE139 /* HWDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAACD42800C70200ACE139 /* HWDateTests.swift */; };
+		C7FAACD72800C72600ACE139 /* HWDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FAACD62800C72600ACE139 /* HWDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,10 @@
 		C76F0FC727CC25360031CA2D /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		C76F0FC927CC26FF0031CA2D /* DataListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewModelTests.swift; sourceTree = "<group>"; };
 		C76F0FCC27CC2E480031CA2D /* ApplicationCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinators.swift; sourceTree = "<group>"; };
+		C7FAACD02800C33F00ACE139 /* LeapYearCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapYearCalculatorTests.swift; sourceTree = "<group>"; };
+		C7FAACD22800C6E600ACE139 /* LeapYearCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapYearCalculator.swift; sourceTree = "<group>"; };
+		C7FAACD42800C70200ACE139 /* HWDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWDateTests.swift; sourceTree = "<group>"; };
+		C7FAACD62800C72600ACE139 /* HWDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 		C76F0F7827CBCC8E0031CA2D /* Module1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C7FAACCF2800C32200ACE139 /* Helper */,
 				C76F0FCB27CC2E310031CA2D /* Coordinators */,
 				C76F0FC227CC20A50031CA2D /* Providers */,
 				C76F0FC527CC251E0031CA2D /* ViewModels */,
@@ -280,6 +289,17 @@
 				C76F0FCC27CC2E480031CA2D /* ApplicationCoordinators.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C7FAACCF2800C32200ACE139 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C7FAACD22800C6E600ACE139 /* LeapYearCalculator.swift */,
+				C7FAACD02800C33F00ACE139 /* LeapYearCalculatorTests.swift */,
+				C7FAACD62800C72600ACE139 /* HWDate.swift */,
+				C7FAACD42800C70200ACE139 /* HWDateTests.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,11 +477,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FAACD32800C6E600ACE139 /* LeapYearCalculator.swift in Sources */,
 				C76F0FC827CC25360031CA2D /* LoginViewModelTests.swift in Sources */,
+				C7FAACD12800C33F00ACE139 /* LeapYearCalculatorTests.swift in Sources */,
 				C76F0FCD27CC2E480031CA2D /* ApplicationCoordinators.swift in Sources */,
 				C76F0FC427CC20BC0031CA2D /* NetworkProviderTests.swift in Sources */,
 				C76F0FBE27CC1D5C0031CA2D /* LoginDataTests.swift in Sources */,
 				C76F0FC127CC1EBD0031CA2D /* DataListRequestTests.swift in Sources */,
+				C7FAACD52800C70200ACE139 /* HWDateTests.swift in Sources */,
+				C7FAACD72800C72600ACE139 /* HWDate.swift in Sources */,
 				C76F0FCA27CC26FF0031CA2D /* DataListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
